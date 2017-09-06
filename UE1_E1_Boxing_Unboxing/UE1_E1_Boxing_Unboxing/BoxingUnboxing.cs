@@ -12,7 +12,7 @@ namespace UE1_E1_Boxing_Unboxing
         {
             // ############# Conversão Boxing
             int idade = 39;
-            object obj_idade = idade;
+            object obj_idade = "teste";
 
             Console.WriteLine(idade.GetType());
             Console.WriteLine(obj_idade.GetType());
