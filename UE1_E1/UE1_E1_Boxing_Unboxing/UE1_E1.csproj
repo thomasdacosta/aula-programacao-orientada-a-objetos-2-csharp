@@ -7,8 +7,8 @@
     <ProjectGuid>{5F7B51B3-4686-447F-8D99-62DEEE69D7F8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UE1_E1_Boxing_Unboxing</RootNamespace>
-    <AssemblyName>UE1_E1_Boxing_Unboxing</AssemblyName>
+    <RootNamespace>UE1_E1</RootNamespace>
+    <AssemblyName>UE1_E1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
