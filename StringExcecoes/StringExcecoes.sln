@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE1_E2", "UE1_E2\UE1_E2.csproj", "{254A6FA4-84B2-4239-B826-3D3E7D22B90A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExcecoes", "StringExcecoes\StringExcecoes.csproj", "{254A6FA4-84B2-4239-B826-3D3E7D22B90A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
