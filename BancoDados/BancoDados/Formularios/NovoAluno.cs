@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BancoDados
 {
-    public partial class Form1 : Form
+    public partial class NovoAluno : Form
     {
-        public Form1()
+        public NovoAluno()
         {
             InitializeComponent();
         }
