@@ -1,0 +1,11 @@
+﻿CREATE SCHEMA `faculdade1` ;
+
+CREATE TABLE `faculdade`.`aluno` (
+  `id_aluno` INT NOT NULL,
+  `nome` VARCHAR(500) NOT NULL,
+  `ra` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id_aluno`),
+  UNIQUE INDEX `id_aluno_UNIQUE` (`id_aluno` ASC));
+
+ALTER TABLE `faculdade`.`aluno` 
+CHANGE COLUMN `id_aluno` `id_aluno` INT(11) NOT NULL AUTO_INCREMENT ;

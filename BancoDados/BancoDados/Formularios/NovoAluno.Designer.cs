@@ -32,13 +32,14 @@
             this.txtRA = new System.Windows.Forms.TextBox();
             this.lblAluno = new System.Windows.Forms.Label();
             this.lblRA = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnIncluir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(101, 23);
+            this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(269, 20);
             this.txtNome.TabIndex = 0;
@@ -46,9 +47,11 @@
             // txtRA
             // 
             this.txtRA.Location = new System.Drawing.Point(101, 49);
+            this.txtRA.MaxLength = 50;
             this.txtRA.Name = "txtRA";
             this.txtRA.Size = new System.Drawing.Size(269, 20);
             this.txtRA.TabIndex = 1;
+            this.txtRA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRA_KeyPress);
             // 
             // lblAluno
             // 
@@ -68,31 +71,33 @@
             this.lblRA.TabIndex = 3;
             this.lblRA.Text = "RA:";
             // 
-            // button1
+            // btnSair
             // 
-            this.button1.Location = new System.Drawing.Point(270, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "&Sair";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSair.Location = new System.Drawing.Point(270, 84);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(100, 35);
+            this.btnSair.TabIndex = 4;
+            this.btnSair.Text = "&Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // button2
+            // btnIncluir
             // 
-            this.button2.Location = new System.Drawing.Point(164, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 35);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "&Incluir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnIncluir.Location = new System.Drawing.Point(164, 84);
+            this.btnIncluir.Name = "btnIncluir";
+            this.btnIncluir.Size = new System.Drawing.Size(100, 35);
+            this.btnIncluir.TabIndex = 5;
+            this.btnIncluir.Text = "&Incluir";
+            this.btnIncluir.UseVisualStyleBackColor = true;
+            this.btnIncluir.Click += new System.EventHandler(this.btnIncluir_Click);
             // 
             // NovoAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 129);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIncluir);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.lblRA);
             this.Controls.Add(this.lblAluno);
             this.Controls.Add(this.txtRA);
@@ -112,8 +117,8 @@
         private System.Windows.Forms.TextBox txtRA;
         private System.Windows.Forms.Label lblAluno;
         private System.Windows.Forms.Label lblRA;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnIncluir;
     }
 }
 

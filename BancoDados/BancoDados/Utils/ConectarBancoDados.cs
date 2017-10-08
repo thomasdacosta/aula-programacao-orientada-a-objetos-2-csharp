@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Data.Sql;
+using MySql.Data.MySqlClient;
 
 namespace BancoDados
 {
     public class ConectarBancoDados
     {
-        private static string conexao = "";
+        private static string conexao = "Server=localhost;Database=faculdade;Uid=root;Pwd=anhanguera;";
 
-        public static SqlConnection ObterConexao()
+        public static MySqlConnection ObterConexao()
         {
-            SqlConnection sqlConnection = new SqlConnection(conexao);
-            return sqlConnection;
+            MySqlConnection mySqlConnection = new MySqlConnection(conexao);
+            return mySqlConnection;
         }
     }
 }
